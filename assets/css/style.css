@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:grey;
+}
+
+body {
+    font-family: "Secular One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+li, a {
+    font-family: "Secular One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    width: 66px;
+}
+
+.nav-links {
+    list-style: none;
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: blue;
+    text-shadow: 0 0 2px antiquewhite;
+}
+
+.bg-img {
+    background-size: cover;
+    background-image: url(../images/shadowfell\ forest.jpg);
+    background-position: center;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+body {
+    font-family: "Secular One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: antiquewhite;
+    text-decoration: none;
+}
