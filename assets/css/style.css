@@ -10,6 +10,7 @@ body {
     font-family: "Secular One", sans-serif;
     font-weight: 400;
     font-size: 20px;
+    display: block;
     color: antiquewhite;
     text-decoration: none;
     background-image: url(../images/shadowfell\ forest.jpg);
@@ -25,11 +26,11 @@ li, a {
     text-decoration: none;
 }
 
-header {
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 25px 10%;
     background-color: darkslategray;
 }
 
@@ -54,23 +55,45 @@ header {
     text-shadow: 0 0 2px antiquewhite;
 }
 
-.main-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-body {
+/*body {
     font-family: "Secular One", sans-serif;
     font-weight: 400;
     font-size: 20px;
+    display:block;
     color: antiquewhite;
     text-decoration: none;
+} */
+main {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    padding: 60px;
 }
-.about-me {
-    display: flex;
+.portrait {
+    display:flex;
+    width:500px;
+    margin: 50px;
+    border-radius:50px;
+    
+}
+
+.container {
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+/* .about-me {
+
     justify-content:space-between;
     background-color:darkslategray;
     margin-block-end: 50px;
 
+}
+*/
+aside {
+    flex-direction:row;
+    flex: 1;
+    background-color: darkslategray;
+    padding: 20px;
 }
