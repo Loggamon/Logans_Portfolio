@@ -17,6 +17,7 @@ body {
     background-size: cover;
     position: absolute;
     text-shadow: 0 0 5px black;
+    flex:none;
 }
 
 li, a {
@@ -33,7 +34,6 @@ li, a {
     align-items: center;
     padding: 10px 10%;
     background-color: darkslategray;
-    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -87,11 +87,14 @@ main {
 }
 .container {
     text-align: center;
+    align-content:center;
+
 }
 aside { 
     flex: 1 1 20%;
     background-color: darkslategray;
     padding: 100px;
+    justify-content: stretch;
 }
 
 
@@ -128,9 +131,14 @@ section p {
     display: flex;
     flex-direction: column;
     min-height:500px;
-    width:100%;
+    width:75%;
     border: 2px solid darkslategray;
     margin: 10px;
     background-color: brown;
     align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+
+    
 }
