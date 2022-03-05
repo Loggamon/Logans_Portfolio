@@ -72,7 +72,8 @@ main {
 }
 .header .portrait {
     display: flex;
-    flex: 1 1 100px;
+    flex: 1 1 0;
+    width:20%;
     height:90%;
     margin:50px 50px;
     border-radius:600px;
@@ -91,31 +92,39 @@ main {
 
 }
 aside { 
-    flex: 1 1 20%;
+    flex: 1 0 20%;
     flex-direction: row;
     background-color: darkslategray;
     padding: 80px;
+    width: 20%;
+    min-width: 20%;
     justify-content: stretch;
     align-items: center;
+    text-align: center;
 }
 body main aside img {
-    flex: 1 1 0;
+    flex: 1 1;
+    min-width: 100px;
     width:100%;
-    max-width: 175px;
+    max-width: 300px;
+    min-height: 100px;
+    align-self: center;
 }
 
 section {
     flex: 1 1 80%;
     background-color: antiquewhite;
+    min-width: 80%;
     color: darkslategray;
     text-shadow: 0 0 1px;
     padding: 70px;
     align-content: center;
-    
     background-image: linear-gradient(to right, darkslategray,antiquewhite,antiquewhite,);
     
 }
-
+section h1 {
+    padding:20px;
+}
 section p {
     padding: 20px;
 }
@@ -164,6 +173,7 @@ section p {
 }
 .contact-section {
     align-content:center;
+    min-height: 500px;
 }
 a {
     display:flex;
@@ -172,4 +182,17 @@ a {
 @media screen and (max-width: 992px) {
 
     
+
+    .portrait {
+    display:block;
+    width: 25%;
+    height: 25%;
+
+    }
+    aside {
+        width:auto;
+    }
+    section {
+        width:auto;
+    }
 }
