@@ -109,6 +109,7 @@ body main aside img {
     max-width: 300px;
     min-height: 100px;
     align-self: center;
+    padding-top: 50%;
 }
 
 section {
@@ -179,20 +180,90 @@ a {
     display:flex;
     width: 30%;
 }
+
+footer {
+    background-color: darkslategray;
+    text-align:center;
+    width:100%;
+}
 @media screen and (max-width: 992px) {
 
     
+    body {
+        font-family: "Secular One", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: antiquewhite;
+        text-decoration: none;
+        background-image: url(../images/shadowfell\ forest.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        text-shadow: 0 0 5px black;
+        flex:none;
+    }
 
     .portrait {
     display:block;
     width: 25%;
-    height: 25%;
+    height: 20%;
 
     }
     aside {
         width:auto;
+        font-size: 15px;
     }
     section {
         width:auto;
+        font-size: 15px;
     }
+    section h1 {
+        padding:20px;
+    }
+    section p {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-family: "Secular One", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: antiquewhite;
+        text-decoration: none;
+        background-image: url(../images/shadowfell\ forest.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        text-shadow: 0 0 5px black;
+        flex:block;
+    }
+    
+    aside { 
+        
+        flex-direction: row wrap;
+        background-color: darkslategray;
+        padding: 80px;
+        width: 100%;
+        min-width: 20%;
+        justify-content: stretch;
+        align-items: center;
+        text-align: center;
+        flex-flow:column;
+    }
+
+    section {
+        flex: 1 1 80%;
+        background-color: antiquewhite;
+        /* min-width: 80%; */
+        width:100%;
+        color: darkslategray;
+        text-shadow: 0 0 1px;
+        padding: 70px;
+        align-content: center;
+        background-image: linear-gradient(to right, darkslategray,antiquewhite,antiquewhite,);
+        
+    }
+
 }
