@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Secular One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: antiquewhite;
+    text-decoration: none;
+    background-image: url(../images/shadowfell\ forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    text-shadow: 0 0 5px black;
+    flex:none;
+}
+
+li, a {
+    font-family: "Secular One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: darkslategray;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    width: 66px;
+}
+
+.nav-links {
+    list-style: none;
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: teal;
+    text-shadow: 0 0 2px antiquewhite;
+}
+
+main {
+    display:flex;
+    flex-wrap:wrap; 
+}
+
+.header {
+    display:flex;
+    flex-basis: 100%;
+    justify-content:space-evenly;
+    
+}
+.header .portrait {
+    display: flex;
+    flex: 1 1 0;
+    width:20%;
+    height:90%;
+    margin:50px 50px;
+    border-radius:600px;
+    box-shadow: 0 2px 10px black;
+    
+}
+.header .h1 {
+    flex: 2 1;
+    padding: 20px;
+    margin:20px;
+    align-self: center;
+}
+.container {
+    grid-template-columns: 2fr 3fr;
+}
+@media screen and (max-width: 992px) {
+
+    
+
+    .portrait {
+    display:block;
+    width: 25%;
+    height: 25%;
+
+    }
+    aside {
+        width:auto;
+    }
+    section {
+        width:auto;
+    }
+}
