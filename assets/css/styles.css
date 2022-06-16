@@ -37,3 +37,78 @@ a {
   color: antiquewhite;
   text-decoration: none;
 }
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: darkslategray;
+  flex: 1 0 20%;
+  float: inline-start;
+  justify-content: center;
+}
+
+section {
+  background-color: antiquewhite;
+  color: darkslategray;
+  flex: 1 0 80%;
+  text-shadow: none;
+}
+
+.container {
+  display: block;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+}
+
+.mini-container {
+  display: flex;
+}
+
+/* .thumbnails {
+  display: block;
+  justify-content:space-around;
+} */
+#thumbnails-first {
+  display: inline;
+  justify-content: center;
+  width: 80%;
+  box-shadow: 0 2px 10px black;
+}
+
+#thumbnail-text {
+}
+
+#thumbnails-first:hover {
+  width: 85%;
+  opacity: 0.3;
+  transition: 0.5s ease;
+}
+#thumbnails-rest {
+  display: inline;
+  flex: 1 2 0;
+  width: 25%;
+  margin: 2%;
+  box-shadow: 0 2px 10px black;
+}
+#thumbnails-rest:hover {
+  width: 30%;
+  opacity: 0.3;
+  transition: 0.5s ease-out;
+}
+
+#contacts {
+  width: 100%;
+}
+.contact-section {
+  align-content: center;
+  min-height: 500px;
+}
