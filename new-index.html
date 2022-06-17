@@ -40,7 +40,7 @@
             </aside>
             <section>
                 <h1>A little bit about myself...</h1>
-            <!--- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, saepe totam, delectus nulla fugit facere deleniti cupiditate aperiam voluptas rem, harum dolorem beatae exercitationem consequatur praesentium vel nihil labore officiis perferendis esse reiciendis. Cumque dignissimos laborum, illo reiciendis amet nisi error facilis? Sit nam vero hic maiores, dolorum deleniti velit?</p> -->
+                <br />
                 <p>I have lived in Seattle for over 20 years now, and have been blessed to have a beautiful family of five with my girlfriend. My hobbies include; writing music, playing videogames, drawing, and running table-top games with my friends. I hope to one day work in the videogame industry; either as a programmer or composer!</p>
             </section>
         </div>
@@ -51,6 +51,7 @@
             </aside>
             <section class="flex-container">
                 <h1>My Projects</h1>
+                <br />
                 <p>Here are some projects that I have worked on:</p>
                 <article class="thumbnails">
                     <a href="https://exotic-car-auction-abln.herokuapp.com/">
@@ -75,15 +76,18 @@
             </aside>
             <section class="contact-section">
                 <h1>Reach Me</h1>
-                <form action="">
-                    <label for="email" id="email">Enter your email!:</label>
-                    <input type="email" name="email">
-                    <input type="submit"></input>
-                </form>
-                <form>
+                <form class="form-fillable" action="mailto:loggamon@icloud.com" method="get">
+                    <label for="name">Enter your name!:
+                        <input type="name" id="name" name="name" />
+                    </label> 
+                    <label for="email">Enter your email!:
+                        <input type="email" id="email" name="email" />
+                    </label>
+                    <br />
                     <label for="comment">Leave a Comment!:</label>
-                    <textarea type="comment" id="comment" rows="3" columns="50"></textarea>
-                    <input type="submit"></input>
+                    <textarea type="comment" id="comment" name="comment" rows="10" columns="50">Place comments here!</textarea>
+                    <input class="button" type="submit" name="submit" value="Send" />
+                    <input class="button" type="reset" name="reset" value="Clear Form" />
                 </form>
             </section>
         </div>
