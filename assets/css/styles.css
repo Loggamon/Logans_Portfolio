@@ -75,6 +75,10 @@ aside {
   padding: 25px;
 }
 
+.icons {
+  align-self: center;
+}
+
 section {
   background-color: antiquewhite;
   color: darkslategray;
@@ -152,9 +156,9 @@ footer {
   width: 100%;
 }
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
 
-}
+} */
 
 @media screen and (max-width: 768px) {
   header {
@@ -167,8 +171,23 @@ footer {
     flex-direction: column;
   }
 
+  aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
   .portrait {
     width: 70%;
+    display: flex;
+    flex: 1 1 0;
+    border-radius: 600px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portrait {
+    width: 90%;
     display: flex;
     flex: 1 1 0;
     border-radius: 600px;
