@@ -5,13 +5,13 @@
     <title>Logan's Portfolio</title>
     <meta charset="UTF-8" />
     <meta></meta>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <script src="https://kit.fontawesome.com/7d3d72b2a8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="navigation">
-        <h1>Logan Monson</h1>
+        <h1> <a class="github" href="https://github.com/Loggamon"><i class="fab fa-github"></i> Logan Monson </a></h1>
         <nav>
             <ul class="nav-links">
                 <li>
@@ -28,61 +28,102 @@
     </header>
 
     <main class="container">
-        <header class="header">
-            <img class="portrait" src="./assets/images/Logan Photo (2).jpg" alt="Photo of Logan Monson" width="500px"/>
+        
+        <header>
+            <img class="portrait" src="./assets/images/Logan Photo Square.jpg" alt="Photo of Logan Monson"/>
             <h1 class="h1">Up-and-coming in the coding world!</h1>
         </header>
-        
-        <aside id="about-me">
-           <img src="./assets/images/IMG-0977.PNG" alt="my logo" />
-            <h1>About Me</h1>
-        </aside>
-        <section>
-            <h1>A little bit about myself...</h1>
-            <!--- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, saepe totam, delectus nulla fugit facere deleniti cupiditate aperiam voluptas rem, harum dolorem beatae exercitationem consequatur praesentium vel nihil labore officiis perferendis esse reiciendis. Cumque dignissimos laborum, illo reiciendis amet nisi error facilis? Sit nam vero hic maiores, dolorum deleniti velit?</p> -->
-            <p>I have lived in Seattle for over 20 years now, and have been blessed to have a beautiful family of five with my girlfriend. My hobbies include; writing music, playing videogames, drawing, and running table-top games with my friends. I hope to one day work in the videogame industry; either as a programmer or composer!</p>
-        </section>
-        
-        <aside id="projects">
-            <img src="./assets/images/IMG-0978.PNG" alt="logo of folder" width="175px"/>
-            <h1>Projects</h1>
-        </aside>
-        <section class="flex-container">
-            <h1>My Projects</h1>
-            <p>Here are some projects that I have worked on:</p>
-            <article class="flex-container">
-                <a id="thumbnails-first" href="https://loggamon.github.io/charging-station-finder/" width="200px">
-                <img id="thumbnails-first" src="./assets/images/eFueLocator.png" href="https://loggamon.github.io/Code_Refactor/">
-                </a>
-                <a href="https://loggamon.github.io/Password_Generator/">
-                <img id="thumbnails-rest" src="./assets/images/passwordGenerator.png">
-                </a>
-                <a href="https://loggamon.github.io/Daily_Work_Calendar/">
-                <img id="thumbnails-rest" src="./assets/images/workDayScheduler.png">
-                </a>
-                <a href="https://loggamon.github.io/Code_Refactor/">
-                <img id="thumbnails-rest" src="./assets/images/codeRefactor.png">
-                </a>
-            </article>
-        </section>
 
-        <aside id="contacts">
-            <img src="./assets/images/IMG-0979.PNG" alt="logo of envelope" width="175px"/>
-            <h1>Contact</h1>
-        </aside>
-        <section class="contact-section">
-            <h1>Reach Me</h1>
-            <form action="">
-                <label for="email" id="email">Enter your email!:</label>
-                <input type="email" name="email">
-                <input type="submit"></input>
-            </form>
-            <form>
-                <label for="comment">Leave a Comment!:</label>
-                <textarea type="comment" id="comment" rows="3" columns="50"></textarea>
-                <input type="submit"></input>
-            </form>
-        </section>
+        <div class="mini-container">
+            <aside id="about-me">
+                <img class="icons" src="./assets/images/IMG-0977.PNG" alt="my logo" width="175px"/>
+                <h1>About Me</h1>
+            </aside>
+            <section>
+                <h1>A little bit about myself...</h1>
+                <br />
+                <p>I have lived in Seattle for over 20 years now, and have been blessed to have a beautiful family of five with my girlfriend. My hobbies include; writing music, playing videogames, drawing, and running table-top games with my friends. I hope to one day work in the videogame industry; either as a programmer or composer!</p>
+            </section>
+        </div>
+        <div class="mini-container">
+            <aside id="projects">
+                <img class="icons" src="./assets/images/IMG-0978.PNG" alt="logo of folder" width="175px"/>
+                <h1>Projects</h1>
+            </aside>
+            <section class="flex-container">
+                <h1>My Projects</h1>
+                <p>Here are some projects that I have worked on:</p>
+                <br />
+                <article class="thumbnails">
+                    <div>
+                        <a href="https://exotic-car-auction-abln.herokuapp.com/">
+                            <img id="thumbnails-first" src="./assets/images/CarAuction.png">
+                        </a>
+                        <a class="text" href="https://github.com/Loggamon/exotic-car-auctions">
+                            <h3>Exotic Car Auction (Github Link Here!) <i class="fab fa-github"></i></h3>
+                        </a> 
+                    </div>
+                    <br />
+                    <div>
+                        <a href="https://tech-blog-social-platform.herokuapp.com/">
+                            <img id="thumbnails-rest" src="./assets/images/Tech-Blog.png">
+                        </a>
+                        <a class="text" href="https://github.com/Loggamon/Model_View_Controller_Tech_Blog" >
+                            <h3>Tech Blog Demonstration (Github Link Here!) <i class="fab fa-github"></i></h3>
+                        </a>
+                    </div>
+                    <br />
+                    <div>
+                        <a href="https://github.com/Loggamon/Team_Profile_Generator">
+                            <img id="thumbnails-rest" src="./assets/images/teamProfileGenerator.png">
+                        </a>
+                        <a class="text" href="https://github.com/Loggamon/Team_Profile_Generator" >
+                            <h3>Team Profile Generator (Github Link Here!) <i class="fab fa-github"></i></h3>
+                        </a>
+                    </div>
+                    <br />
+                    <div>
+                        <a href="https://ofelia1870.github.io/charging-station-finder/">
+                            <img id="thumbnails-rest" src="./assets/images/CarCharger.png">
+                        </a>
+                        <a class="text" href="https://github.com/Loggamon/charging-station-finder" >
+                            <h3>Charging Station Finder (Github Link Here!) <i class="fab fa-github"></i></h3>
+                        </a>
+                    </div>
+                    <br />
+                </article>
+            </section>
+        </div>
+        <div class="mini-container">
+            <aside id="contacts">
+                <img class="icons" src="./assets/images/IMG-0979.PNG" alt="logo of envelope" width="175px"/>
+                <h1>Contact</h1>
+            </aside>
+            <section class="contact-section">
+                <h1>Reach Me</h1>
+                <p>If you would like to see more of my work...</p>
+                <br />
+                <a class="text" href="https://github.com/Loggamon"><p>Check out my Github here! <i class="fab fa-github"></i></p></a>
+                <p> or </p>
+                <a class="text" href="https://www.linkedin.com/in/logan-monson-454023238?trk=people-guest_people_search-card"><p>Check out my LinkedIn here! <i class="fa-brands fa-linkedin-in"></i></p></a>
+                <br />
+                <form class="form-fillable" action="mailto:loggamon@icloud.com" method="get">
+                    <p>If you like to contact me...</p>
+                    <label for="name">Enter your name!:
+                        <input type="name" id="name" name="name" />
+                    </label> 
+                    <label for="email">Enter your email!:
+                        <input type="email" id="email" name="email" />
+                    </label>
+                    <br />
+                    <label for="comment">Leave a Comment!:</label>
+                    <textarea type="comment" id="comment" name="comment" rows="10" columns="50">Place comments here!</textarea>
+                    <input class="button" type="submit" name="submit" value="Send" />
+                    <input class="button" type="reset" name="reset" value="Clear Form" />
+                    <p>...and I will try to get back to you!</p>
+                </form>
+            </section>
+        </div>
         <footer>
             <h3>Loggamon Productions; est. 2022</h3>
         </footer>

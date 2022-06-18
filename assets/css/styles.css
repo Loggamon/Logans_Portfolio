@@ -60,6 +60,17 @@ header {
   padding: 50px;
 }
 
+.github {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.github:hover {
+  transition: all 0.3s ease 0s;
+  color: teal;
+  text-shadow: 0 0 2px antiquewhite;
+}
+
 .portrait {
   width: 20%;
   display: flex;
@@ -107,15 +118,30 @@ section {
   display: flex;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  color: darkslategray;
+}
+
+.text:hover {
+  color: teal;
+  text-shadow: 0 0 2px darkslategray;
+  transition: all 0.3s ease 0s;
+}
+
+.thumbnails {
+  display: block;
+}
 
 #thumbnails-first {
   display: inline;
   justify-content: center;
   width: 80%;
   box-shadow: 0 2px 10px black;
-}
-
-#thumbnail-text {
 }
 
 #thumbnails-first:hover {
@@ -126,12 +152,12 @@ section {
 #thumbnails-rest {
   display: inline;
   flex: 1 2 0;
-  width: 25%;
+  width: 50%;
   margin: 2%;
   box-shadow: 0 2px 10px black;
 }
 #thumbnails-rest:hover {
-  width: 30%;
+  width: 60%;
   opacity: 0.3;
   transition: 0.5s ease-out;
 }
@@ -171,7 +197,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  
+
   .mini-container {
     display: flex;
     flex-direction: column;
