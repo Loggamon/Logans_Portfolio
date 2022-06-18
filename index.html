@@ -4,7 +4,7 @@
 <head>
     <title>Logan's Portfolio</title>
     <meta charset="UTF-8" />
-    <meta></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
     <script src="https://kit.fontawesome.com/7d3d72b2a8.js" crossorigin="anonymous"></script>
 </head>
@@ -69,7 +69,7 @@
                             <img id="thumbnails-rest" src="./assets/images/Tech-Blog.png">
                         </a>
                         <a class="text" href="https://github.com/Loggamon/Model_View_Controller_Tech_Blog" >
-                            <h3>Tech Blog Demonstration (Github Link Here!) <i class="fab fa-github"></i></h3>
+                            <h3>Tech Blog Demo (Github Link Here!) <i class="fab fa-github"></i></h3>
                         </a>
                     </div>
                     <br />
@@ -107,20 +107,21 @@
                 <p> or </p>
                 <a class="text" href="https://www.linkedin.com/in/logan-monson-454023238?trk=people-guest_people_search-card"><p>Check out my LinkedIn here! <i class="fa-brands fa-linkedin-in"></i></p></a>
                 <br />
+                <p>If you like to contact me...</p>
                 <form class="form-fillable" action="mailto:loggamon@icloud.com" method="get">
-                    <p>If you like to contact me...</p>
-                    <label for="name">Enter your name!:
+
+                    <label class="label-text" for="name">Enter your name!:
                         <input type="name" id="name" name="name" />
                     </label> 
-                    <label for="email">Enter your email!:
+                    <label class="label-text" for="email">Enter your email!:
                         <input type="email" id="email" name="email" />
                     </label>
                     <br />
-                    <label for="comment">Leave a Comment!:</label>
+                    <label class="label-text" for="comment">Leave a Comment!:</label>
                     <textarea type="comment" id="comment" name="comment" rows="10" columns="50">Place comments here!</textarea>
                     <input class="button" type="submit" name="submit" value="Send" />
                     <input class="button" type="reset" name="reset" value="Clear Form" />
-                    <p>...and I will try to get back to you!</p>
+                    <p class="label-text">...and I will try to get back to you!</p>
                 </form>
             </section>
         </div>
